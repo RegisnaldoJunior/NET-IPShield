@@ -20,17 +20,17 @@
 ### Tela Inicial
 Interface moderna e intuitiva para iniciar a análise de rede.
 
-![Tela Inicial](images/tela_inicial.png)
+![Tela Inicial](imagens/tela_inicial.png)
 
 ### Análise em Andamento  
 Tela de carregamento durante o processo de varredura da rede.
 
-![Analisando Rede](images/tela_carregamento.png)
+![Analisando Rede](imagens/tela_carregamento.png)
 
 ### Resultados da Análise
 Relatório completo com dispositivos encontrados e vulnerabilidades detectadas.
 
-![Resultados da Análise](images/tela_resultados.png)
+![Resultados da Análise](imagens/tela_resultados.png)
 
 ---
 
@@ -125,3 +125,4 @@ Foco em redes domésticas pequenas/médias
 Funciona melhor em redes Windows
 
 Requer execução como administrador para detecção completa
+
