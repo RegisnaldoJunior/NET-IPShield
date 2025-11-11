@@ -54,29 +54,32 @@ Relatório completo com dispositivos encontrados e vulnerabilidades detectadas.
 
 ### Instalação Manual
 1. Clone o repositório:
-```bash
+```
 git clone https://github.com/RegisnaldoJunior/net-ipshield.git
 cd net-ipshield
-
+```
 Instale as dependências:
 
-bash
+```
 pip install -r requirements.txt
 Execute a aplicação:
+```
 
-bash
+Execute a aplicação:
+```
 python main.py
-Download do Executável
-🔗 Download NetIPShield.exe - Versão standalone, não requer Python instalado.
+```
 
 🎯 Como Funciona
 Arquitetura MVC
-text
+```
 net-ipshield/
 ├── model/           # Lógica de negócio (network_scanner.py)
 ├── view/            # Interface (home_view.py, loading_view.py, results_view.py)
 ├── controller/      # Controlador (main_controller.py)
 └── main.py          # Arquivo principal
+```
+
 Fluxo de Análise
 Varredura de Rede - Utiliza tabela ARP e scan ativo para identificar dispositivos
 
@@ -87,7 +90,7 @@ Classificação - Categoriza riscos baseado em vulnerabilidades conhecidas
 Geração de Relatório - Cria arquivo texto com findings e recomendações
 
 📋 Estrutura do Projeto
-text
+```
 net-ipshield/
 ├── model/
 │   ├── __init__.py
@@ -108,21 +111,25 @@ net-ipshield/
 ├── requirements.txt
 ├── README.md
 └── logo.png
+```
+
 ⚡ Uso Avançado
 Build do Executável
 Para criar um executável standalone:
 
-bash
+```
 python -m PyInstaller --onefile --windowed --name "NetIPShield" --icon=logo.ico --add-data "logo.png;." --hidden-import=PIL._tkinter_finder --hidden-import=tkinter main.py
+```
+
 Execução como Administrador
 Para melhor detecção, execute como administrador.
 
 ⚠️ Limitações
-Análise básica de vulnerabilidades (não substitui ferramentas especializadas)
+- Análise básica de vulnerabilidades (não substitui ferramentas especializadas)
 
-Foco em redes domésticas pequenas/médias
+- Foco em redes domésticas pequenas/médias
 
-Funciona melhor em redes Windows
+- Funciona melhor em redes Windows
 
-Requer execução como administrador para detecção completa
+- Requer execução como administrador para detecção completa
 
